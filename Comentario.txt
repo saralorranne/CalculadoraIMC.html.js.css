@@ -1,1 +1,30 @@
-Para comenta no js eu uso // para uma linha ou /* texto */ para mais de uma linha. já no html <!-- texto --> 
+Para comentar no Java script eu uso // para uma linha ou */ para mais de uma linha. Já no html<!-- Texto-->
+
+// Função para calcular o IMC
+function calcularIMC(peso, altura) {
+return peso / Math.pow(altura, 2);
+}
+
+// Função para classificar o IMC
+function classificarIMC(imc) {
+if (imc < 18.5) return "Abaixo do peso";
+senão if (imc < 25) return "Peso normal";
+senão if (imc < 30) return "Sobrepeso";
+else if (imc < 35) return "Obesidade Grau I (nível)";
+else if (imc < 40) return "Obesidade Grau II (moderada)";
+senão retornar "Obesidade Grau III (sepultura)";
+}
+
+// Dados dos alunos
+const maria = { nome: "Maria", peso: 55, altura: 1,65, idade: 25 };
+const pedro = { nome: "Pedro", peso: 70, altura: 1,80, idade: 28 };
+
+// Calcula e exibe o IMC e a classificação para Maria
+const imcMaria = calcularIMC(maria.peso, maria.altura);
+const classificaçãoMaria = classificarIMC(imcMaria);
+console.log(${maria.nome}: IMC ${imcMaria.toFixed(2)} - ${classificacaoMaria});
+
+// Calcula e exibe o IMC e a classificação para Pedro
+const imcPedro = calcularIMC(pedro.peso, pedro.altura);
+const classificaçãoPedro = classificarIMC(imcPedro);
+console.log(${pedro.nome}: IMC ${imcPedro.toFixed(2)} - ${classificacaoPedro});
