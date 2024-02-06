@@ -1,0 +1,1 @@
+Para comenta no js eu uso // para uma linha ou /* texto */ para mais de uma linha. já no html <!-- texto --> 
